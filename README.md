@@ -3,7 +3,7 @@
 ## Inspiration
 We were inspired by painters such as Pablo Picasso and Vincent Van Gogh, to make a robot that is able to take a realistic image and turn it into an abstract sketch. 
 ## What it does
-Our image processing algorithm was built from the ground up and is able to take an image capture/file and turn it into a path for the robot to follow. SpongeGogh is initialized by remotely accessing the device's raspberry pi and running '''run.py'''. It follows the path given by the image capture and draws it on the floor with a marker.
+Our image processing algorithm was built from the ground up and is able to take an image capture/file and turn it into a path for the robot to follow. SpongeGogh is initialized by remotely accessing the device's raspberry pi and running ```run.py```. It follows the path given by the image capture and draws it on the floor with a marker.
 ## How we built it
 We built it with two servo motors, two wheels, a battery pack, a raspberry pi and a pihat. We also used a pre-made chassis and battery pack holder. As for the software, we relied on python packages sys, math, numpy, opencv and matplotlib.
 ## Challenges we ran into
