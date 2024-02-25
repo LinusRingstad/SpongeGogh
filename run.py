@@ -197,20 +197,25 @@ def drive(use_equal, angles, scale):
 
 
 if __name__ == '__main__':
+    led1 = led_module.LED({
+        "pin": 20
+    })
 
+    led2 = led_module.LED({
+        "pin": 21
+    })
 
     camera = camera_module.Camera({
         "show_preview": False
     })
     camera.capture()
-    arr = np.array((camera.image_array))
+    img = np.array((camera.image_array))
     
     led2.on()
-    time.sleep(cycle_time)
+    time.sleep(1)
     led2.off()
-    time.sleep(cycle_time)
+    time.sleep(1)
 
-    img = cv2.imread(sys.argv[1])
     contours, filtered = process(img)
     path = path_splicing(makepath(contours))
     contours = makepath(contours)
@@ -218,9 +223,9 @@ if __name__ == '__main__':
     use_equal = get_coords(equal_path)
 
     led1.on()
-    time.sleep(cycle_time)
+    time.sleep(1)
     led1.off()
-    time.sleep(cycle_time)
+    time.sleep(1)
         
     plt.figure(dpi=200)
     plt.plot(use_equal[0], use_equal[1], '-')
