@@ -13,4 +13,4 @@ We're proud of being able to take an image and convert it to a map. This was by 
 ## What we learned
 We learned how to remotely access a raspberry pi, and got a lot more accustomed to git. We also gained some experience working with the GPIO ports on the raspberry pi.
 ## What's next for SpongeGogh
-As mentioned before, a gyroscope would really help to improve precision and make more complicated images. Additionally, we started working on (but did not finish) code for a servo to raise and lower the marker.
+As mentioned before, a gyroscope would really help improve precision and make more complicated images. Additionally, we started working on (but did not finish) code for a servo to raise and lower the marker.
